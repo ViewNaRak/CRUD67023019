@@ -1,15 +1,4 @@
 ###
-POST http://localhost:3000/api/products
-Content-Type: application/json
-
-{
-  "code": "10002",
-  "name": "Tea",
-  "price": "แพงจัง",
-  "cost": 200.25
-}
-
-###
 GET http://localhost:3000/api/medical
 
 ### 
