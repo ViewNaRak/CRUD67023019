@@ -16,7 +16,7 @@ app.route('/api/midterm', midtermRoutes)
 
 // หน้าแรก (Home Page)
 app.get('/', (c) => {
-  return c.text('สวัสดี! นี่คือระบบสอบ Midterm (เข้าที่ /api/midterm)')
+  return c.text('Hi')
 })
 
 serve({
