@@ -3,7 +3,7 @@ import { Hono } from 'hono'
 import userRoutes from './users/index.js'
 import roleRoutes from './roles/index.js'
 import productRoutes from './products/index.js'
-import midtermRoutes from './midterm/index.js'
+import medicalRoutes from './medical/index.js'
 
 import db from './db/index.js'
 
@@ -12,11 +12,10 @@ const app = new Hono()
 app.route('/api/users', userRoutes)
 app.route('/api/roles', roleRoutes)
 app.route('/api/products', productRoutes)
-app.route('/api/midterm', midtermRoutes)
+app.route('/api/medical', medicalRoutes) 
 
-// หน้าแรก (Home Page)
 app.get('/', (c) => {
-  return c.text('Hi')
+  return c.text('สวัสดี! นี่คือระบบข้อมูลการแพทย์ (Medical Group)')
 })
 
 serve({

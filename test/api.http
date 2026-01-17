@@ -13,6 +13,7 @@ Content-Type: application/json
   "email": "john@doe.com"
 }
 
+###
 POST http://localhost:3000/api/products
 Content-Type: application/json
 
@@ -47,32 +48,32 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/api/midterm
+GET http://localhost:3000/api/medical
 
-###
-POST http://localhost:3000/api/midterm
+### 
+POST http://localhost:3000/api/medical
 Content-Type: application/json
 
 {
-  "Date": "2023-12-01",
+  "Date": "2024-02-14",
   "Time": "10:30",
   "Status": "รอการยืนยัน",
-  "Notes": "สอบวิชา Web Programming"
+  "Notes": "นัดตรวจสุขภาพฟัน (Dental Care)"
 }
 
-###
-GET http://localhost:3000/api/midterm/1001
+### 
+GET http://localhost:3000/api/medical/HN-1001
 
-###
-PUT http://localhost:3000/api/midterm/1001
+### 
+PUT http://localhost:3000/api/medical/HN-1001
 Content-Type: application/json
 
 {
-  "Date": "2023-12-01",
+  "Date": "2024-02-14",
   "Time": "10:30",
   "Status": "ยืนยันแล้ว",
-  "Notes": "สอบเสร็จแล้ว (แก้ไขสถานะ)"
+  "Notes": "ยืนยันการนัดหมายเรียบร้อย"
 }
 
-###
-DELETE http://localhost:3000/api/midterm/1001
+### 
+DELETE http://localhost:3000/api/medical/HN-1001
