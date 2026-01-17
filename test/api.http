@@ -1,42 +1,4 @@
 ###
-GET http://localhost:3000/api/users/10
-
-###
-GET http://localhost:3000/api/roles
-
-###
-POST http://localhost:3000/api/users
-Content-Type: application/json
-
-{
-  "name": "John Doe",
-  "email": "john@doe.com"
-}
-
-###
-POST http://localhost:3000/api/products
-Content-Type: application/json
-
-{
-  "code": "10001", 
-  "name": "Super Coffee",
-  "price": 50.5,
-  "cost": 30.25,
-  "remark": "สินค้าขายดี"
-}
-
-###
-POST http://localhost:3000/api/products
-Content-Type: application/json
-
-{
-  "code": "1000", 
-  "name": "Super Coffee",
-  "price": 50.5,
-  "cost": 30.25
-}
-
-###
 POST http://localhost:3000/api/products
 Content-Type: application/json
 
