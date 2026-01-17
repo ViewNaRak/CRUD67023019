@@ -15,7 +15,7 @@ app.route('/api/products', productRoutes)
 app.route('/api/medical', medicalRoutes) 
 
 app.get('/', (c) => {
-  return c.text('สวัสดี! นี่คือระบบข้อมูลการแพทย์ (Medical Group)')
+  return c.text('Hi')
 })
 
 serve({
