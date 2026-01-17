@@ -3,8 +3,8 @@ import { Hono } from 'hono'
 import userRoutes from './users/index.js'
 import roleRoutes from './roles/index.js'
 import productRoutes from './products/index.js'
+import midtermRoutes from './midterm/index.js'
 
-// import database
 import db from './db/index.js'
 
 const app = new Hono()
@@ -12,6 +12,12 @@ const app = new Hono()
 app.route('/api/users', userRoutes)
 app.route('/api/roles', roleRoutes)
 app.route('/api/products', productRoutes)
+app.route('/api/midterm', midtermRoutes)
+
+// หน้าแรก (Home Page)
+app.get('/', (c) => {
+  return c.text('สวัสดี! นี่คือระบบสอบ Midterm (เข้าที่ /api/midterm)')
+})
 
 serve({
   fetch: app.fetch,

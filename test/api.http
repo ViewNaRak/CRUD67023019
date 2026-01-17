@@ -13,7 +13,6 @@ Content-Type: application/json
   "email": "john@doe.com"
 }
 
-###
 POST http://localhost:3000/api/products
 Content-Type: application/json
 
@@ -46,3 +45,34 @@ Content-Type: application/json
   "price": "แพงจัง",
   "cost": 200.25
 }
+
+###
+GET http://localhost:3000/api/midterm
+
+###
+POST http://localhost:3000/api/midterm
+Content-Type: application/json
+
+{
+  "Date": "2023-12-01",
+  "Time": "10:30",
+  "Status": "รอการยืนยัน",
+  "Notes": "สอบวิชา Web Programming"
+}
+
+###
+GET http://localhost:3000/api/midterm/1001
+
+###
+PUT http://localhost:3000/api/midterm/1001
+Content-Type: application/json
+
+{
+  "Date": "2023-12-01",
+  "Time": "10:30",
+  "Status": "ยืนยันแล้ว",
+  "Notes": "สอบเสร็จแล้ว (แก้ไขสถานะ)"
+}
+
+###
+DELETE http://localhost:3000/api/midterm/1001
